@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import './Stopwatch.css';
 
 
 const Stopwatch = () => {
@@ -34,14 +35,14 @@ const Stopwatch = () => {
 	};
 
 	return (
-		<div>
-			<div>
+		<div className='stopwatch flex-column'>
+			<div className='stopwatch-header'>
 				<h1>Stopwatch</h1>
 			</div>
-			{console.log("time", time)}
+			{console.log('time', time)}
 
 			<div>
-				<div className="d-flex justify-content-center align-items-center">
+				<div className='stopwatch-time-display flex-row'>
 					<p>{("0" + (Math.floor(time / 60000) % 60)).slice(-2)}</p>
 					<p>:</p>
 					<p>{("0" + (Math.floor(time / 1000) % 60)).slice(-2)}</p>

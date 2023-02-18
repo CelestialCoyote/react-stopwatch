@@ -5,7 +5,7 @@ import Stopwatch from './components/Stopwatch/Stopwatch';
 const App = () => {
 
     return (
-        <div className="app">
+        <div className="app flex-column">
             <Stopwatch />
         </div>
     );

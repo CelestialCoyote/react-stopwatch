@@ -22,9 +22,18 @@ body, #root {
     flex-grow: 1;
 }
 
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
 .app {
     background-color: gray;
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
+	justify-content: center;
 }
