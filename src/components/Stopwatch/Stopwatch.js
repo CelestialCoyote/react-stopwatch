@@ -51,7 +51,13 @@ const Stopwatch = () => {
 				</div>
 			</div>
 
-			{isActive ? (
+			<div className='stopwatch-control flex-row'>
+				<button className='stopwatch-control-button' onClick={handleStart}>Start</button>
+				<button className='stopwatch-control-button' onClick={handlePaused}>Stop</button>
+				<button className='stopwatch-control-button' onClick={handleReset}>Reset</button>
+			</div>
+
+			{/* {isActive ? (
 				<div>
 					{ispaused ? (
 						<div>
@@ -59,7 +65,7 @@ const Stopwatch = () => {
 						</div>
 					) : (
 						<div>
-							<button onClick={handlePaused}>stop</button>
+							<button onClick={handlePaused}>Stop</button>
 						</div>
 					)}
 					<div>
@@ -72,7 +78,7 @@ const Stopwatch = () => {
 						<button onClick={handleStart}>Start</button>
 					</div>
 				</div>
-			)}
+			)} */}
 		</div>
 	);
 };
