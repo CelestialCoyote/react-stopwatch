@@ -2,6 +2,7 @@
 	background: lightgray;
 	border-radius: 1.0em;
 	height: 50%;
+	justify-content: space-around;
 	margin: 0 auto;
 	width: 50%;
 }
@@ -28,6 +29,8 @@
 
 .stopwatch-control-button {
 	border-radius: 0.5em;
+	color: red;
+	font-size: 1.0rem;
 	height: 3.0em;
 	width: 7.0em;
 }
