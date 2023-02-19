@@ -43,11 +43,11 @@ const Stopwatch = () => {
 
 			<div>
 				<div className='stopwatch-time-display flex-row'>
-					<p>{("0" + (Math.floor(time / 60000) % 60)).slice(-2)}</p>
-					<p>:</p>
-					<p>{("0" + (Math.floor(time / 1000) % 60)).slice(-2)}</p>
-					<p>:</p>
-					<p>{("0" + (Math.floor(time / 10) % 100)).slice(-2)}</p>
+					<p className='stopwatch-numbers'>{("0" + (Math.floor(time / 60000) % 60)).slice(-2)}</p>
+					<p className='stopwatch-numbers'>:</p>
+					<p className='stopwatch-numbers'>{("0" + (Math.floor(time / 1000) % 60)).slice(-2)}</p>
+					<p className='stopwatch-numbers'>:</p>
+					<p className='stopwatch-numbers'>{("0" + (Math.floor(time / 10) % 100)).slice(-2)}</p>
 				</div>
 			</div>
 
